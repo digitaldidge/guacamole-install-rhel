@@ -26,7 +26,7 @@ set -E
 # USER CONFIGURABLE #
 # Generic
 SCRIPT_BUILD="2019_9_23" # Scripts Date for last modified as "yyyy_mm_dd"
-ADM_POC="Local Admin, admin@admin.com"  # Point of contact for the Guac server admin
+ADM_POC="Local Admin, darren@wisecorp.co.uk"  # Point of contact for the Guac server admin
 
 # Versions
 GUAC_STBL_VER="1.0.0" # Latest stable version of Guac from https://guacamole.apache.org/releases/
@@ -122,7 +122,7 @@ if [ $GUAC_SOURCE == "Git" ]; then
 	MAVEN_BIN="${MAVEN_FN}-bin.tar.gz"
 else # Stable release
 	GUAC_VER=${GUAC_STBL_VER}
-	GUAC_URL="https://apache.org/dyn/closer.cgi?action=download&filename=guacamole/${GUAC_VER}/"
+	GUAC_URL="https://wisecorp.co.uk/guacamole/${GUAC_VER}/"
 	GUAC_SERVER="guacamole-server-${GUAC_VER}"
 	GUAC_CLIENT="guacamole-${GUAC_VER}"
 fi
